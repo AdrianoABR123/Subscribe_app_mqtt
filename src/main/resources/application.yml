@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SubscribeApp
+  profiles:
+    active: dev

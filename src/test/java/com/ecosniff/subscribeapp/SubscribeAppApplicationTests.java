@@ -1,4 +1,4 @@
-package com.ecosniff.SubscribeApp;
+package com.ecosniff.subscribeapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
