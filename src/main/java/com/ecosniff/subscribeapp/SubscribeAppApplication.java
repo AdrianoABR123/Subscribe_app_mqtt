@@ -1,8 +1,9 @@
-package com.ecosniff.SubscribeApp;
+package com.ecosniff.subscribeapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 @SpringBootApplication
 public class SubscribeAppApplication {
 
