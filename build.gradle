@@ -28,7 +28,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
-	implementation 'org.postgresql:postgresql:42.6.0'
+	implementation 'org.postgresql:postgresql'
 	compileOnly 'org.projectlombok:lombok'
 	compileOnly 'org.springframework.integration:spring-integration-mqtt'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -37,9 +37,11 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
+	testImplementation 'org.junit.jupiter:junit-jupiteror'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	runtimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test'){
-	enabled = false
+	useJUnitPlatform()
 }
